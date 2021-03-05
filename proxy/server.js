@@ -5,7 +5,7 @@ const port = 3000;
 const app = express();
 //change to local host if desired for environment 'http://localhost:3001' 'http://localhost:3002'
 const sizeColorServicePath = 'http://3.18.69.132:3001';
-const productServicePath = 'http://localhost:3002';
+const productServicePath = 'http://184.169.234.6:3002';
 const galleryServicePath = 'http://54.241.116.3:3004';
 const feedbackServicePath = 'http://3.18.69.132:3003';
 
