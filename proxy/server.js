@@ -4,6 +4,7 @@ const axios = require('axios');
 const port = 3000;
 const app = express();
 const bodyParser = require('body-parser');
+const cors = require('cors');
 //change to local host if desired for environment 'http://localhost:3001' 'http://localhost:3002'
 const sizeColorServicePath = 'http://3.141.97.133:3001';
 const productServicePath = 'http://184.169.234.6:3002';
