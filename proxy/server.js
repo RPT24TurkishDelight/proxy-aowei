@@ -30,6 +30,16 @@ app.get('/products/:productId/summary', (req, res) => {
 
 });
 
+app.post('/products/:productId', (req, res) => {
+  let id = req.params.productId;
+  axios.post(`${productServicePath}/products/${id}`)
+    .then ((res) => {res.send(res.data)})
+    .catch((err) => {
+      console.error(err);
+      res.send(err)
+    })
+})
+
 app.get('/products/:productId/gallery', (req, res) => {
   let id = req.params.productId;
 
