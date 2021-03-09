@@ -32,7 +32,6 @@ app.get('/products/:productId/summary', (req, res) => {
 
 app.post('/products/', (req, res) => {
   let id = req.params.productId;
-  console.log('here')
   axios.post(`${productServicePath}/products/`)
     .then ((response) => {res.send(response.data)})
     .catch((err) => {
