@@ -9,7 +9,7 @@ const productServicePath = 'http://184.169.234.6:3002';
 const galleryServicePath = ' http://54.215.52.230:3004';
 const feedbackServicePath = 'http://52.9.33.58:3003';
 
-require('newrelic');
+// require('newrelic');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
