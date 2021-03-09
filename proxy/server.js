@@ -31,6 +31,7 @@ app.get('/products/:productId/summary', (req, res) => {
 });
 
 app.post('/products/', (req, res) => {
+  console.log(req.body);
   let id = req.params.productId;
   axios.post(`${productServicePath}/products/`, req.body)
     .then ((response) => {res.send(response.data)})
