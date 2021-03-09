@@ -34,7 +34,7 @@ app.post('/products/', (req, res) => {
   let id = req.params.productId;
   console.log('here')
   axios.post(`${productServicePath}/products/`)
-    .then ((res) => {res.send(res.data)})
+    .then ((response) => {res.send(response.data)})
     .catch((err) => {
       console.error(err);
       res.send(err)
