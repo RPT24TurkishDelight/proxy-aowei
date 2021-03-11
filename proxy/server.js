@@ -28,7 +28,7 @@ app.get('/products/:productId/summary', (req, res) => {
     res.send(response.data);
   })
   .catch((err) => {
-    console.error(err);
+    //console.error(err);
     res.send([]);
   });
 
@@ -39,7 +39,7 @@ app.post('/products/', (req, res) => {
   axios.post(`${productServicePath}/products/`, req.body)
     .then ((response) => {res.send(response.data)})
     .catch((err) => {
-      console.error(err);
+      //console.error(err);
       res.send(err)
     })
 })
