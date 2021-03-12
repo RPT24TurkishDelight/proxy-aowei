@@ -7,11 +7,12 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 //change to local host if desired for environment 'http://localhost:3001' 'http://localhost:3002'
 const sizeColorServicePath = 'http://3.141.97.133:3001';
-const productServicePath = 'http://13.57.48.234';
+const productServicePath = 'http://184.169.234.6:3002';
 const galleryServicePath = ' http://54.215.52.230:3004';
 const feedbackServicePath = 'http://52.9.33.58:3003';
 
- require('newrelic');
+
+//require('newrelic');
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
